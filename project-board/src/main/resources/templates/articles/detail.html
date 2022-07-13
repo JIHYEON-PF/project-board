@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 페이지</title>
+</head>
+<body>
+
+  <header id="header"></header>
+
+    <main>
+        <header>
+          <h1>첫번째 글</h1>
+        </header>
+        <aside>
+            <p><span class="nick-name">Fkaa</span></p>
+            <p><a class="u-url" rel="me" href="mailto:kenj_h@naver.com">kenj_h@naver.com</a> </p>
+            <p><time datetime="2022-07-13T22:04:00">2022-07-13</time></p>
+            <p>#java</p>
+        </aside>
+
+        <p>본문<br><br></p>
+        <div>
+            <form>
+                <label for="articleComment" hidden>댓글</label>
+                <textarea id="articleComment" placeholder="댓글 쓰기.." rows="3"></textarea>
+                <button type="submit">쓰기</button>
+            </form>
+
+            <ul>
+                <li>
+                    <div>
+                        <time><small>2022-07-13</small></time>
+                        <strong>Fkaa</strong>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                            Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time><small>2022-07-13</small></time>
+                        <strong>Fkaa</strong>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                            Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <nav class="page-pagination" role="navigation">
+                <a class="page-previous" href="#">이전 글</a>
+                <a class="page-next" href="#">다음 글</a>
+            </nav>
+        </div>
+  </main>
+
+  <footer id="footer"></footer>
+
+</body>
+</html>
