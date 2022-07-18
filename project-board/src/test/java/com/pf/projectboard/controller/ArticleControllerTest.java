@@ -107,7 +107,7 @@ class ArticleControllerTest {
                 .andExpect(view().name("articles/detail"))
                 .andExpect(model().attributeExists("article"))
                 .andExpect(model().attributeExists("articleComments"))
-                .andExpect(model().attribute("totalCont", totalCount));
+                .andExpect(model().attribute("totalCount", totalCount));
         then(articleService).should().getArticle(articleId);
         then(articleService).should().getArticleCount();
     }
