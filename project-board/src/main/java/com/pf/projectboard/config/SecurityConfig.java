@@ -26,7 +26,7 @@ public class SecurityConfig {
                         .mvcMatchers(
                                 HttpMethod.GET,
                                 "/",
-                                "/articlces",
+                                "/articles",
                                 "/articles/search-hashtag"
                         ).permitAll()
                         .anyRequest().authenticated()
