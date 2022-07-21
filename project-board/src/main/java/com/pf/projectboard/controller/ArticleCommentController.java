@@ -25,8 +25,6 @@ public class ArticleCommentController {
             @AuthenticationPrincipal BoardPrincipal boardPrincipal,
             ArticleCommentRequest articleCommentRequest
     ) {
-
-        //TODO: 인정 정보를 넣어줘야 한다.
         articleCommentService.saveArticleComment(articleCommentRequest.toDto(
                 boardPrincipal.toDto()
         ));

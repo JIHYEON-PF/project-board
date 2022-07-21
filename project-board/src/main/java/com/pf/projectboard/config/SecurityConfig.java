@@ -40,12 +40,6 @@ public class SecurityConfig {
     }
 
     @Bean
-    public WebSecurityCustomizer webSecurityCustomizer() {
-        // static, resource, css
-        return (web) -> web.ignoring().requestMatchers(PathRequest.toStaticResources().atCommonLocations());
-    }
-
-    @Bean
     public UserDetailsService userDetailsService(UserAccountRepository userAccountRepository) {
         return username -> userAccountRepository
                 .findById(username)
