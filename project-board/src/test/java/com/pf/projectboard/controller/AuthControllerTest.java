@@ -1,6 +1,7 @@
 package com.pf.projectboard.controller;
 
 import com.pf.projectboard.config.SecurityConfig;
+import com.pf.projectboard.config.TestSecurityConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @DisplayName("View Controller - 인증")
-@Import(SecurityConfig.class)
+@Import(TestSecurityConfig.class)
 @WebMvcTest(void.class)
 public class AuthControllerTest {
 
