@@ -50,3 +50,6 @@ https://project-board-jh.herokuapp.com/
 |Mersey|HGtSu3gk52||Nyssa|QC44oZ||Renault|mJd1ujc6p|
 |Siobhan|NEaslyHwQmzO||Stevy|Lv1yP4yQiPr||Teriann|VTOw20apC|
 |Thane|wbppUqe0YIc0||Ursulina|L3Lp2AhZH||Valentijn|nlVdETgc|
+
+
+* 현재 회원가입 기능 업데이트 도중으로 테스트 ID를 활용한 서비스 테스트만 가능
