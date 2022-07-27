@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<thlogic>
+    <attr sel="#header" th:replace="header::header" />
+    <attr sel="#footer" th:replace="footer::footer" />
+    <attr sel="#mypage-main" th:object="${userAccount}">
+        <attr sel="#id" th:value="*{userId}" />
+        <attr sel="#password" th:value="*{#strings.substring(userPassword,6,#strings.length(userPassword))}" />
+        <attr sel="#email" th:value="*{email}" />
+        <attr sel="#nickname" th:value="*{nickname}" />
+        <attr sel="#userMemo" th:text="*{memo}" />
+    </attr>
+<!--    <attr sel="#home" th:href="@{/}" />-->
+<!--    <attr sel="#hashtag" th:href="@{/articles/search-hashtag}" />-->
+<!--    <attr sel="#username" sec:authorize="isAuthenticated()" sec:authentication="name" />-->
+<!--    <attr sel="#login" sec:authorize="!isAuthenticated()" th:href="@{/login}" />-->
+<!--    <attr sel="#logout" sec:authorize="isAuthenticated()" th:href="@{/logout}" />-->
+</thlogic>

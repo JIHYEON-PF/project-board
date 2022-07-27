@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="JH">
+    <title>마이페이지</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body class="bg-light">
+
+<div class="container">
+    <main id="mypage-main">
+        <div class="py-5 text-center">
+            <h2>마이페이지</h2>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+            <div class="col-md-6 col-lg-6">
+                <form class="needs-validation">
+                    <div class="col g-3">
+
+                        <div class="col-12 my-3">
+                            <label id="idLabel" for="id" class="form-label">ID</label>
+                            <input type="text" class="form-control" id="id" value="ID" required readonly>
+                        </div>
+
+                        <div class="col-12 my-3">
+                            <label id="pwLabel" for="password" class="form-label">비밀번호</label>
+                            <input type="text" class="form-control" id="password" value="PW" required readonly>
+                        </div>
+
+                        <div class="col-12 my-3">
+                            <label id="mailLabel" for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" value="example@example.com" readonly>
+                        </div>
+
+                        <div class="col-12 my-3">
+                            <label for="nickname" class="form-label">닉네임</label>
+                            <input type="text" class="form-control" id="nickname" value="nickname" readonly>
+                        </div>
+
+                        <div class="col-12 my-3">
+                            <label for="userMemo" class="form-label">메모</label>
+                            <textarea class="form-control" id="userMemo" rows="5" style="resize: none" readonly>메모</textarea>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+
+<!--                    <button class="w-100 btn btn-primary btn-lg" type="submit">회원가입 완료</button>-->
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2022 PortFolio-Board</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="/">HOME</a></li>
+        </ul>
+    </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
